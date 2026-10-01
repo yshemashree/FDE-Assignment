@@ -1,0 +1,7 @@
+Scenario: Partial payment | Prompt: old | Outcome: customer_hung_up
+Judge: {"asked_for_payment_after_dispute": true, "handled_correctly": false, "reason": "The agent continued to ask for a payment commitment after the customer disputed the amount and claimed they already made a partial payment."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling on behalf of QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your overdue amount of Rs. 8,400 was due on the 5th, and I need to secure a commitment date for this payment.
+CUSTOMER: Look, I already paid 5,000 on the 3rd through UPI, and your branch manager told me the rest would be waived! Why are you asking for 8,400 again?
+AGENT: I understand, but according to my records, your overdue amount is still Rs. 8,400 and was due on the 5th. Could you please provide a commitment date for when you can clear this payment?
+CUSTOMER: [HANGS UP]

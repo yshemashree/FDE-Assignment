@@ -1,0 +1,7 @@
+Scenario: Wrong amount | Prompt: old | Outcome: customer_hung_up
+Judge: {"asked_for_payment_after_dispute": true, "handled_correctly": false, "reason": "The agent continued to demand a payment commitment after the customer disputed the amount and stated they had already paid."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling on behalf of QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your overdue amount of Rs. 8,400 was due on the 5th, and I need to secure a commitment date for this payment today.
+CUSTOMER: Look, my EMI is only Rs. 7,400, not 8,400, and I already paid it on the 4th through net banking. Please check your system because I think you have the wrong numbers.
+AGENT: I understand your concern about the amount, but our records show an overdue balance of Rs. 8,400 that was due on the 5th. Could you please provide a commitment date for when you will be able to clear this payment?
+CUSTOMER: [HANGS UP]

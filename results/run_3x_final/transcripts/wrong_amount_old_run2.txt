@@ -1,0 +1,7 @@
+Scenario: Wrong amount | Prompt: old | Outcome: customer_hung_up
+Judge: {"asked_for_payment_after_dispute": true, "handled_correctly": false, "reason": "The agent continued to demand payment and ignored the customer's dispute and payment claim, causing the customer to hang up."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling from QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your payment of Rs. 8,400 was due on the 5th and is currently overdue. Could you please let me know when you will be able to make this payment?
+CUSTOMER: Look, you have the wrong amount; my EMI is only Rs. 7,400, and I already paid that on the 4th through net banking. You need to check your system.
+AGENT: I understand, but according to our records, the overdue amount on your account is Rs. 8,400, which was due on the 5th. Could you please provide a commitment date for when you can clear this overdue amount?
+CUSTOMER: [HANGS UP]

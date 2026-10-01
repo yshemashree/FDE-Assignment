@@ -1,0 +1,10 @@
+Scenario: Genuine refusal (must still follow 3-refusal rule) | Prompt: old | Outcome: agent_ended
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": true, "reason": "The agent correctly avoided treating it as a dispute, asked for a commitment a limited number of times, and closed politely."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling on behalf of QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your payment of Rs. 8,400 was due on the 5th and is currently overdue. Could you please let me know when you'll be able to make this payment?
+CUSTOMER: Yes, this is Mr. Sharma. I know I owe the money, but I'm not going to pay it right now, and I won't give you a date for it.
+AGENT: I understand. However, I still need you to provide a commitment date for when you can pay the overdue amount of Rs. 8,400.
+CUSTOMER: Like I said, I'm not giving you a date, and I'm not paying it right now.
+AGENT: I understand. Could you please provide a commitment date for when you will be able to clear the overdue amount of Rs. 8,400?
+CUSTOMER: I've already told you, I am not paying it and I am not giving you any date.
+AGENT: I understand. Since you are unable to provide a payment commitment date at this time, I will make a note of your refusal.

@@ -1,0 +1,9 @@
+Scenario: Wrong amount | Prompt: new | Outcome: agent_ended
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": true, "reason": "The agent stopped asking for payment upon the dispute, captured the transaction details, and closed the call politely."}
+
+AGENT: Hello, I'm calling from QuickLoan Finance regarding your personal loan ending in 4821; you have an overdue amount of Rs. 8,400 that was due on the 5th.
+CUSTOMER: Look, my EMI is actually Rs. 7,400, and I already paid that amount on the 4th through net banking. You need to check your records because I think you have the wrong figure.
+AGENT: Thank you for letting me know you paid Rs. 7,400 on the 4th through net banking, and I apologize for the confusion regarding the figure. Could you please share the transaction reference number so our team can check it?
+CUSTOMER: Hold on, let me check my phone for the transaction ID. Here it is, it's TXN98765432.
+AGENT: Thank you for providing the reference number, Mr. Sharma. Net banking payments can take up to two working days to reflect, so our team will verify this transaction, and we won't call you about this amount until that check is complete. Have a good day.
+    [tool] log_dispute({"account_number": "4821", "amount_paid": "7400", "payment_date": "4th", "payment_mode": "net banking", "reference_number": "TXN98765432"})

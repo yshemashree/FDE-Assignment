@@ -1,0 +1,9 @@
+Scenario: Callback request | Prompt: old | Outcome: customer_hung_up
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": false, "reason": "The agent failed to agree to the callback time and kept pushing for a payment date while the customer was busy, leading to a hang-up."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling from QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your overdue amount of Rs. 8,400 was due on the 5th. Could you please let me know when you will be able to make this payment?
+CUSTOMER: Hi Priya, I'm actually right in the middle of a work meeting. Can you please call me back at 6 PM today?
+AGENT: I understand. Can you please confirm the date by which you will be able to make the payment of Rs. 8,400?
+CUSTOMER: Like I said, I'm busy right now, so please just call me back at 6 PM and we can discuss it then.
+AGENT: I understand. Can you please provide a specific date by which you will commit to making the overdue payment of Rs. 8,400?
+CUSTOMER: [HANGS UP]

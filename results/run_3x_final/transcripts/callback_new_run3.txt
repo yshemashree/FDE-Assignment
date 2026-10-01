@@ -1,0 +1,7 @@
+Scenario: Callback request | Prompt: new | Outcome: agent_ended
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": true, "reason": "The agent agreed to call back at the requested time, scheduled the callback, and closed politely."}
+
+AGENT: Hello Mr. Sharma, I'm calling from QuickLoan Finance regarding your personal loan account ending in 4821, where an amount of Rs. 8,400 was due on the 5th.
+CUSTOMER: Look, I'm actually in the middle of an important work meeting right now. Can you please call me back at 6 PM today?
+AGENT: I completely understand, Mr. Sharma, I will ring you back at 6 PM today. Have a good meeting.
+    [tool] schedule_callback({"time": "6 PM today"})

@@ -1,0 +1,8 @@
+Scenario: Hardship / unable to pay | Prompt: old | Outcome: agent_ended
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": true, "reason": "The agent acknowledged the specific hardship, secured a realistic commitment date of the 20th, and avoided repeating demands."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling on behalf of QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your payment of Rs. 8,400 was due on the 5th and is currently overdue. Could you please let me know when you'll be able to make this payment?
+CUSTOMER: Look, I lost my job last month, so I really can't pay right now. My final settlement only comes through on the 20th.
+AGENT: I understand. Could you please confirm if you can make the payment of Rs. 8,400 on the 20th, when your settlement comes through?
+CUSTOMER: Yes, I can definitely make the payment on the 20th as soon as the money hits my account.
+AGENT: Thank you, Mr. Sharma. I have noted down the 20th as your payment commitment date for the overdue amount of Rs. 8,400. Have a good day.

@@ -1,0 +1,8 @@
+Scenario: Hardship / unable to pay | Prompt: new | Outcome: agent_ended
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": true, "reason": "The agent acknowledged the hardship, worked toward the realistic date of the 20th as offered by the customer, and did not repeat demands."}
+
+AGENT: Hello, I'm calling from QuickLoan Finance regarding your personal loan ending in 4821; you have an overdue amount of Rs. 8,400 which was due on the 5th.
+CUSTOMER: Look, I know I'm late, but I lost my job last month and I just don't have the cash right now.
+AGENT: I'm really sorry to hear about your job loss, Mr. Sharma, and I completely understand things are tough. What date do you think would be realistic for you to clear this balance?
+CUSTOMER: My final settlement is coming on the 20th, so I can definitely pay it by then.
+AGENT: That sounds like a workable plan, Mr. Sharma, so I'll make a note that you'll clear the Rs. 8,400 on the 20th. Thank you for your time today, and have a good day.

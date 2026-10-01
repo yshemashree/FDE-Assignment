@@ -1,0 +1,7 @@
+Scenario: Wrong amount | Prompt: new | Outcome: agent_ended
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": true, "reason": "The agent acknowledged the dispute, recorded the payment details, and closed the call politely without asking for further payment."}
+
+AGENT: Hello Mr. Sharma, this is Priya calling from QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that an amount of Rs. 8,400 was due on the 5th and is currently overdue.
+CUSTOMER: Look, you've got the wrong amount, my EMI is 7,400 rupees, not 8,400. And I already paid that 7,400 on the 4th through net banking, so you need to check your system.
+AGENT: Thank you for letting me know that you paid Rs. 7,400 via net banking on the 4th, Mr. Sharma. I'll make sure our team checks this right away. Please note that online payments can take up to two working days to reflect in our system, and we won't call you about this while we verify it. Have a good day!
+    [tool] log_dispute({"account_number": "4821", "disputed_amount": "8400", "customer_stated_amount": "7400", "payment_date": "4th", "payment_method": "net banking"})
