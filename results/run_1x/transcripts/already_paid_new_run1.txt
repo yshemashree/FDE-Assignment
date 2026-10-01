@@ -1,0 +1,11 @@
+Scenario: Already paid (this transcript) | Prompt: new | Outcome: customer_hung_up
+Judge: {"asked_for_payment_after_dispute": false, "handled_correctly": false, "reason": "The agent continued to interrogate the customer for payment details after the dispute, causing the customer to hang up."}
+
+AGENT: Hello, I'm calling from QuickLoan Finance for Mr. Sharma regarding personal loan account 4821; you have an overdue amount of Rs. 8,400 that was due on the 5th.
+CUSTOMER: Look, I already paid that exact amount of Rs. 8,400 on the 3rd through the app in the evening.
+AGENT: Thank you for letting me know you made that payment on the 3rd through the app. Could you please tell me the exact date the funds left your account?
+CUSTOMER: I don't have the exact bank details right in front of me, but I paid it on the 3rd.
+AGENT: That's completely fine, thank you for sharing that. Could you let me know what mode of payment you used, such as UPI or net banking?
+CUSTOMER: I used UPI, but I already told you I made the payment. Why are you keeping on about this?
+AGENT: I appreciate you bearing with me while I get this sorted out. Did you happen to receive a transaction or UTR reference number for that UPI payment?
+CUSTOMER: [HANGS UP]

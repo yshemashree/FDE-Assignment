@@ -1,0 +1,9 @@
+Scenario: Wrong amount | Prompt: old | Outcome: customer_hung_up
+Judge: {"asked_for_payment_after_dispute": true, "handled_correctly": false, "reason": "The agent continued asking for payment after the customer disputed the amount and claimed to have already paid."}
+
+AGENT: Hello, am I speaking with Mr. Sharma? This is Priya calling from QuickLoan Finance regarding your personal loan account ending in 4821. I'm calling to inform you that your overdue amount of Rs. 8,400 was due on the 5th. Could you please let me know when you will be able to make this payment?
+CUSTOMER: Wait, the amount is Rs. 7,400, not 8,400, and I already paid it on the 4th through net banking. Can you please check your system again?
+AGENT: I understand. However, according to my records, your overdue amount is Rs. 8,400 and was due on the 5th. Could you please provide a commitment date for when you will be able to make this payment?
+CUSTOMER: I already told you I paid Rs. 7,400 on the 4th, so your system is definitely showing the wrong number. Please check it properly before calling me again.
+AGENT: I understand your concern about the amount. However, my records show an overdue amount of Rs. 8,400 that was due on the 5th. Could you please let me know by what date you can commit to making this payment?
+CUSTOMER: [HANGS UP]
